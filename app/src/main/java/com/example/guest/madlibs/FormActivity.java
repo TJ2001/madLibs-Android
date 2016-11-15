@@ -28,12 +28,11 @@ public class FormActivity extends AppCompatActivity {
     private EditText mInput15;
     private EditText mInput16;
     private EditText mInput17;
-    private EditText mInput18;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_form);
         mInput1 = (EditText) findViewById(R.id.input1);
         mInput2 = (EditText) findViewById(R.id.input2);
         mInput3 = (EditText) findViewById(R.id.input3);
