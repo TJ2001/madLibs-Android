@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mInput15;
     private EditText mInput16;
     private EditText mInput17;
+    private EditText mInput18;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

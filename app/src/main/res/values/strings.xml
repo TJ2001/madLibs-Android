@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">MadLibs</string>
     <string name="make">Make MadLib</string>
-    <string name="adjective">Adjective</string>
-    <string name="relative">Relative</string>
+    <string name="adjective">ADJECTIVE</string>
+    <string name="relative">RELATIVE</string>
+    <string name="person">PERSON IN ROOM</string>
+    <string name="verbed">VERB ENDING IN "ED"</string>
+    <string name="bodyPart">BODY PART</string>
+    <string name="verbing">VERB ENDING IN "ING"</string>
+    <string name="verb">VERB</string>
+    <string name="noun">NOUN</string>
+    <string name="nouns">NOUN (PLURAL)</string>
+    <string name="adverb">ADVERB</string>
 </resources>

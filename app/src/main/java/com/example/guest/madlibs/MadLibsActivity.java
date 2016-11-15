@@ -32,6 +32,6 @@ public class MadLibsActivity extends AppCompatActivity {
         String output15 = intent.getStringExtra("input15");
         String output16 = intent.getStringExtra("input16");
         String output17 = intent.getStringExtra("input17");
-        mOutputOne.setText("Dear " + output1 + ",\n\nI am having a(n) " + output2 + " time at camp. The counselor is " + output3 + " and the food is " + output4 + ". I met "  + output5 + " and we became " + output6 + "friends. Unfortunately, " + output5 + " is " + output7 + " and I " + output8 + " my " + output9 + " so we couldn’t go " + output10 + " like everybody else. I need more " + output11 + " and a " + output12 + " sharpener, so please " + output13 + " " + output14 + " more when you " + output15 + " back.\n\nYour " + output16 + ",\n" + output17);
+        mOutputOne.setText("Dear " + output1 + ",\n\nI am having a(n) " + output2 + " time at camp. The counselor is " + output3 + " and the food is " + output4 + ". I met "  + output5 + " and we became " + output6 + " friends. Unfortunately, " + output5 + " is " + output7 + " and I " + output8 + " my " + output9 + " so we couldn’t go " + output10 + " like everybody else. I need more " + output11 + " and a " + output12 + " sharpener, so please " + output13 + " " + output14 + " more when you " + output15 + " back.\n\nYour " + output16 + ",\n" + output17);
     }
 }
