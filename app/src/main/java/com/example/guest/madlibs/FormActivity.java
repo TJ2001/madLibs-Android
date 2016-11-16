@@ -8,49 +8,37 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class FormActivity extends AppCompatActivity {
     public static final String TAG = FormActivity.class.getSimpleName();
-    private Button mMakeMadLibButton;
-    private EditText mInput1;
-    private EditText mInput2;
-    private EditText mInput3;
-    private EditText mInput4;
-    private EditText mInput5;
-    private EditText mInput6;
-    private EditText mInput7;
-    private EditText mInput8;
-    private EditText mInput9;
-    private EditText mInput10;
-    private EditText mInput11;
-    private EditText mInput12;
-    private EditText mInput13;
-    private EditText mInput14;
-    private EditText mInput15;
-    private EditText mInput16;
-    private EditText mInput17;
+
+    @Bind(R.id.btn_makeMadLib) Button mMakeMadLibButton;
+    @Bind(R.id.input1) EditText mInput1;
+    @Bind(R.id.input2) EditText mInput2;
+    @Bind(R.id.input3) EditText mInput3;
+    @Bind(R.id.input4) EditText mInput4;
+    @Bind(R.id.input5) EditText mInput5;
+    @Bind(R.id.input6) EditText mInput6;
+    @Bind(R.id.input7) EditText mInput7;
+    @Bind(R.id.input8) EditText mInput8;
+    @Bind(R.id.input9) EditText mInput9;
+    @Bind(R.id.input10) EditText mInput10;
+    @Bind(R.id.input11) EditText mInput11;
+    @Bind(R.id.input12) EditText mInput12;
+    @Bind(R.id.input13) EditText mInput13;
+    @Bind(R.id.input14) EditText mInput14;
+    @Bind(R.id.input15) EditText mInput15;
+    @Bind(R.id.input16) EditText mInput16;
+    @Bind(R.id.input17) EditText mInput17;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
-        mInput1 = (EditText) findViewById(R.id.input1);
-        mInput2 = (EditText) findViewById(R.id.input2);
-        mInput3 = (EditText) findViewById(R.id.input3);
-        mInput4 = (EditText) findViewById(R.id.input4);
-        mInput5 = (EditText) findViewById(R.id.input5);
-        mInput6 = (EditText) findViewById(R.id.input6);
-        mInput7 = (EditText) findViewById(R.id.input7);
-        mInput8 = (EditText) findViewById(R.id.input8);
-        mInput9 = (EditText) findViewById(R.id.input9);
-        mInput10 = (EditText) findViewById(R.id.input10);
-        mInput11 = (EditText) findViewById(R.id.input11);
-        mInput12 = (EditText) findViewById(R.id.input12);
-        mInput13 = (EditText) findViewById(R.id.input13);
-        mInput14 = (EditText) findViewById(R.id.input14);
-        mInput15 = (EditText) findViewById(R.id.input15);
-        mInput16 = (EditText) findViewById(R.id.input16);
-        mInput17 = (EditText) findViewById(R.id.input17);
-        mMakeMadLibButton = (Button) findViewById(R.id.btn_makeMadLib);
+
+        ButterKnife.bind(this);
 
         mMakeMadLibButton.setOnClickListener(new View.OnClickListener() {
             @Override

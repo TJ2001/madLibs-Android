@@ -18,7 +18,7 @@
             android:text="New Text"
             android:id="@+id/output1"
             android:layout_alignParentTop="true"
-            android:textSize="30sp" />
+            android:textSize="24sp" />
     </ScrollView>
 
 </RelativeLayout>

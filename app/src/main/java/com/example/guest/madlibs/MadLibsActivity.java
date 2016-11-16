@@ -1,6 +1,7 @@
 package com.example.guest.madlibs;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -8,12 +9,15 @@ import android.widget.TextView;
 public class MadLibsActivity extends AppCompatActivity {
     private TextView mOutputOne;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mad_libs);
+
         mOutputOne = (TextView) findViewById(R.id.output1);
+        Typeface daughter = Typeface.createFromAsset(getAssets(), "fonts/architects_daughter.ttf");
+        mOutputOne.setTypeface(daughter);
+
         Intent intent = getIntent();
         String output1 = intent.getStringExtra("input1");
         String output2 = intent.getStringExtra("input2");

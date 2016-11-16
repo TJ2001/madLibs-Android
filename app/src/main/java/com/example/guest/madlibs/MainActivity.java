@@ -1,6 +1,7 @@
 package com.example.guest.madlibs;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mButtonPlay = (Button) findViewById(R.id.btn_play);
+        Typeface coiny = Typeface.createFromAsset(getAssets(), "fonts/coiny.ttf");
+        mButtonPlay.setTypeface(coiny);
+
         mButtonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
